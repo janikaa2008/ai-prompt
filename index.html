@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Generator</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div class="logo">✨ AI Prompt Generator</div>
+            <h1>Create Better AI Prompts</h1>
+            <p>
+                Build clear and effective prompts for ChatGPT
+                and other AI tools.
+            </p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Input Section -->
+            <section class="input-section">
+
+                <h2>Build Your Prompt</h2>
+                <p class="description">
+                    Fill in the details below to generate your prompt.
+                </p>
+
+                <div class="form-group">
+                    <label for="role">1. Role</label>
+                    <input
+                        type="text"
+                        id="role"
+                        placeholder="Example: Act as a Computer Science teacher"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="task">2. Task</label>
+                    <textarea
+                        id="task"
+                        placeholder="Example: Explain Python programming"
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="context">3. Context</label>
+                    <textarea
+                        id="context"
+                        placeholder="Example: I am a first-year college student"
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="constraints">4. Constraints</label>
+                    <textarea
+                        id="constraints"
+                        placeholder="Example: Use simple English and give examples"
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="format">5. Output Format</label>
+                    <input
+                        type="text"
+                        id="format"
+                        placeholder="Example: Bullet points with examples"
+                    >
+                </div>
+
+                <!-- Buttons -->
+                <div class="button-group">
+                    <button id="generateBtn" class="generate-btn">
+                        ✨ Generate Prompt
+                    </button>
+
+                    <button id="sampleBtn" class="sample-btn">
+                        📌 Sample Prompt
+                    </button>
+                </div>
+
+                <button id="clearBtn" class="clear-btn">
+                    Clear All Fields
+                </button>
+
+            </section>
+
+            <!-- Output Section -->
+            <section class="output-section">
+
+                <h2>Generated Prompt</h2>
+
+                <p class="description">
+                    Your completed AI prompt will appear here.
+                </p>
+
+                <div id="promptOutput" class="prompt-output">
+                    <p class="placeholder">
+                        Your generated prompt will appear here...
+                    </p>
+                </div>
+
+                <button id="copyBtn" class="copy-btn">
+                    📋 Copy Prompt
+                </button>
+
+                <p id="message" class="message" aria-live="polite"></p>
+
+                <!-- Sample Reference -->
+                <div class="example-box">
+                    <h3>💡 Sample Prompt</h3>
+
+                    <p>
+                        Act as a Computer Science teacher.
+                        Explain Python programming to a first-year
+                        college student.
+                    </p>
+
+                    <p>
+                        Use simple English, provide two examples,
+                        and give three practice questions.
+                    </p>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with ❤️ for College Students</p>
+            <p>AI Prompt Generator | HTML, CSS & JavaScript</p>
+        </footer>
+
+    </div>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

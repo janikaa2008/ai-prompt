@@ -1,0 +1,243 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
+    color: #333;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.logo {
+    display: inline-block;
+    background: #ffffff;
+    color: #6c43d8;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+    font-size: 36px;
+    color: #4c35a5;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* Sections */
+.input-section,
+.output-section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #4c35a5;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d5d5e5;
+    border-radius: 9px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #7856d8;
+    box-shadow: 0 0 5px rgba(120, 86, 216, 0.3);
+}
+
+/* Buttons */
+button {
+    border: none;
+    padding: 13px 18px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.generate-btn {
+    background: linear-gradient(135deg, #6844d9, #9164ed);
+    color: white;
+    flex: 1;
+}
+
+.sample-btn {
+    background: #e9e3ff;
+    color: #5d3cb5;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.clear-btn {
+    width: 100%;
+    margin-top: 12px;
+    background: #f1f1f5;
+    color: #555;
+}
+
+/* Generated Prompt */
+.prompt-output {
+    min-height: 260px;
+    background: #f7f6ff;
+    border: 1px dashed #9b85df;
+    border-radius: 12px;
+    padding: 20px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    line-height: 1.8;
+    color: #333;
+    font-size: 15px;
+}
+
+.placeholder {
+    color: #999;
+}
+
+.copy-btn {
+    width: 100%;
+    margin-top: 18px;
+    background: #20a477;
+    color: white;
+}
+
+.message {
+    color: #16845f;
+    font-size: 13px;
+    margin-top: 10px;
+    min-height: 18px;
+}
+
+/* Example Box */
+.example-box {
+    background: #fff8e7;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+    border-left: 4px solid #f5b942;
+}
+
+.example-box h3 {
+    color: #a66a00;
+    margin-bottom: 12px;
+}
+
+.example-box p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 35px;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .input-section,
+    .output-section {
+        padding: 22px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .generate-btn,
+    .sample-btn {
+        width: 100%;
+    }
+}
